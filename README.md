@@ -45,6 +45,7 @@ Given the scope of the task and the service only consisting of three main endpoi
 * GET /transactions - Retrieves all transactions.
 * POST /transactions - Adds a new transaction (sale or tax payment).
 Example request body:
+`
 {
     "eventType": "SALES",
     "date": "2024-02-14T17:29:39Z",
@@ -62,12 +63,14 @@ Example request body:
         }
     ]
 }
+`
 
 **Sales**
 * GET /sales - Retrieves all sales.
 * PATCH /sale - Amends an existing sale.
 
 Example request body:
+`
 {
     "date": "2024-02-14T17:29:39Z",
     "invoiceId": "3419027d-960f-4e8f-b8b7-f7b2b4791821",
@@ -75,6 +78,7 @@ Example request body:
     "cost": 100,
     "taxRate": 0.4
 }
+`
 
 **Tax Payments**
 * GET /tax-payments - Retrieves all tax payment transactions.
