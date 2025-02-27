@@ -17,7 +17,7 @@ You can also run this in Docker should you wish to, this will require Docker to 
 `docker compose up` in the root directory
 
 
-# Implementation structure**
+# Implementation structure
 The tax service is built using Node.js with TypeScript and follows a layered architecture pattern:
 * **Express Router**: All HTTP endpoints are defined in the transactions.ts router file, which handles incoming requests and delegates them to the appropriate service methods.
 * **Middleware Layer**: Request validation is primarily implemented as middleware functions that run before the route handlers. These middleware functions validate request bodies, query parameters, and ensure data consistency before processing.
