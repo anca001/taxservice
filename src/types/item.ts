@@ -1,6 +1,5 @@
 export interface Item {
   itemId: string;
-  // cost is amount in pennies
   cost: number;
   taxRate: number;
 }
