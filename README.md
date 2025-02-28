@@ -15,6 +15,7 @@ To run in dev mode with hot reload:
 
 You can also run this in Docker should you wish to, this will require Docker to be installed: 
 `docker compose up` in the root directory
+**Note**: When running with Docker, the service port 8080 is mapped to port 8090 on your local machine. You can access the service at http://localhost:8090
 
 
 # Implementation structure
